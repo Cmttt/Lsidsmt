@@ -34,8 +34,8 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
-            <li><a href="about">About This Data Set</a></li>
-	    <li  class="active"><a href="quality">Data Quality</a></li>
+            <li><a href="quality">Data Quality</a></li>
+	    <li><a href="about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -46,27 +46,36 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+        <p>This data set was obtained through Kaggle at: https://www.kaggle.com/drgilermo/nba-players-stats/version/1</a></p>
+        <p>It contains basic and advanced statistics for every player that played in the NBA from 1950 to 2017.</p>
       </div>
 
     
       <div class="page-header">
-	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<h2>Data Completeness</h2>
+	<p>This data contains a collection of statistics for every player that has played in the NBA from 1950 to 2017. 
+	It contains, among other things, the season, player name, age at season, games played, all basic tracked statistics, as well as a number of advanced statistics 
+	that have been calculated based on the basic stats provided. Each player that played for multiple teams in one season is represented in multiple rows. For example, 
+	Serge Ibana was traded from the Orlando Magic to the Toronto Raptors in 2017. There are three rows for Serge Ibaka in 2017. One for Orlando, one for Toronto, and one for 
+	his total stats. The data is complete in terms of including all players that have played in the NBA. However, there are certain statistics that are missing for earlier years.
+	For example, most advanced statistics are unavailble for years before 1980. Steals and Blocks were not tracked in the NBA until the 1973-74 season. Games started is also a stat
+	that was not tracked until 1980. Three point stats are unavailable for years before 1980 as the three-point shot did not exist prior to this time period. Our analysis is focused
+	on changes in the league since the 1990s, so these issues are not present in the subset of data that we are looking at. Additionally, there are a few rows with null values. These 
+	one offs were ignored in our analysis as the players the rows corresponded to tended to be players that only played a few games during the season.</p>
       </div>
       
       <div class="page-header">
-	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<h2>Data Coherancy</h2>
+	<p>The data is coherant in terms of our expectations. Running a quick comparsion of basic stats shows us that point guards get more assists than other positions. Centers and PFs get more rebounds and blocks than 
+	other positions. Backcourt players and small forwards tend to shoot more threes. All these fall in line with our expectations of stats by positions.</p>
+	<div class='tableauPlaceholder' id='viz1522987947797' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StatsVerification&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='StatsVerification&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StatsVerification&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1522987947797');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       </div>
 
       <div class="page-header">
-	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<h2>Data Correctness</h2>
+	<p>We sampled parts of the data to verify correctly. We cross referenced the statistics included in the dataset to offical stats from the stats.nba.com website and found no glaring errors. We cross referenced 
+	advanced statistic to those that are included on basketball-reference.com (a reliable source for historical NBA data) and found no major deviations. Any deviations were a result of rounding and were not significant 
+	enough to cause issues in our analysis.</p>
       </div>
 
     </div> <!-- /container -->
