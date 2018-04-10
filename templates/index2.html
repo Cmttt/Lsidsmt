@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Index</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="https://bootswatch.com/4/flatly/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this project -->
+    <link href="css/explore.css" rel="stylesheet">
+  </head>
+  <style>
+    body {
+      font: 10px sans-serif;
+    }
+    svg text{
+      fill:grey;
+      font-size:11px;
+    }
+    svg .values text{
+      pointer-events:none;
+      stroke-width: 0.5px;
+    }
+    .groups:hover{
+      cursor:pointer;
+      font-weight:bold;
+    }
+  </style>
+  <body role="document">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><h4>Home</h4></a></li>
+            <li><a href="quality"><h4>Data Quality</h4></a></li>
+        <li><a href="about"><h4>About</h4></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <div class="container theme-showcase" role="main">
+      
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Evolution of the Modern NBA</h1>
+        <h4>A visual exploration of the NBA in the past 30 years. 
+        This project takes a look at a variety of fundamental changes in how the game has changed. It will discuss the evolution of the following:
+        <ul>
+            <li>3 Point Shooting</li>
+            <li>Player Salaries</li>
+            <li>Defense</li>
+            <li>Victories in Finals</li>
+        </ul>
+        Through visualizations and interactive story-telling.</h4>
+      </div>
+      
+      
+      <div class="tabbable"> <!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab"><h3>3-Point Shots&nbsp;&nbsp;&nbsp;</h3></a></li>
+            <li><a href="#tab2" data-toggle="tab"><h3>Player Salaries&nbsp;&nbsp;&nbsp;</h3></a></li>
+            <li><a href="#tab3" data-toggle="tab"><h3>Defense&nbsp;&nbsp;&nbsp;</h3></a></li>
+            <li class="active"><a href="#tab4" data-toggle="tab"><h3>Victories in Finals</h3></a></li>
+        </ul>
+        <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+        <h1>Evolution of the 3 Point Shot</h1>
+        <h4>One fundamental change in the past 30 years is the evolution of the 3 point shot. Introduced in 1979-80 season, the NBA adopted a three point line 23 feet and 9 inches away from the basket. 
+        Adoption of the 3-point shot was slow in the first few years. With teams favoring 2-point shots due to the perception of 2-point shots being a "higher percentage" shot. </h4>
+        <div class='tableauPlaceholder' id='viz1522963449116' style='position: relative'><noscript>
+        <a href='#'><img alt='3 Point Attempt and % : League vs. Team ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3P&#47;3PTAttemptsvs_Percentage&#47;3PTAttemptDash&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                <param name='name' value='3PTAttemptsvs_Percentage&#47;3PTAttemptDash' />
+                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3P&#47;3PTAttemptsvs_Percentage&#47;3PTAttemptDash&#47;1.png' /> 
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='filter' value='publish=yes' />
+            </object>
+            </div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1522963449116');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            vizElement.style.width='1000px';vizElement.style.height='827px';                    
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+        <br>
+        <h4>Since then however, the 3-pointer has become an integral part of the game. The trend can be reflected in the amount of three pointers taken league wide. 
+        In 1990, the league as a whole took a total of 15,361 three point shots. In 2017, the league took a total of 73,136 three point shots, a nearly 400% increase. 
+        A number of other interesting facts are played out in the statistics as well. During the 1994-95, 1995-96, and 1996-97 seasons, the NBA shortened the distance of the 3 point line from 
+        23ft 9 inches to a uniform 22 ft around the basket. This led to a increase in the amount of three point shots taken as well. In the 1997-98, season, the three point line was changed back,
+        and the results can be seen in the sharp drop of three pointers from the 96-97 season to the 97-98 season. Since then, there has been a steady increase in the number of three point shots taken 
+        has increased. The most noticable increase can be seen in the modern era. Specifically, the league took 38,277 three pointers in 2012, yet this amount has since doubled to 73,136 in 2017.
+        Driven by an increase in analytics backing the efficiency of the 3-point shot. Intuitively, shooting 33% on 3-point shots is identical to shooting 50% on 2-point shots. Thus, a nunmber of teams in 
+        the modern era have led the charge in shooting three pointers.</h4>
+
+        <h4>The teams that have been the quickest at adopting the 3-pointer have been the Houston Rockets, Golden State Warriors and the Cleveland Cavaliers. In particular, the Houston Rockets shot a record 
+        3,306 3-pointers in the 2017 season, well higher than any other team in NBA history. This amount driven by analytics savvy GM Daryl Morey, and the acquisition of James Harden in 2012. The Rockets shot just 1,330 
+        3-pointers in 2012.</h4>
+        
+        <h4>Another driving force behind the rise of the 3-pointer is the increased effectiveness of shooters. The league as a whole shot an average of 22% on three pointers in 1990. In 2017, they shot an 
+        average of 30% on three pointers on 400% greater shooting volume. If players are becoming better shooters, what reason is there to not shoot three pointers?</h4>
+        
+        <div class='tableauPlaceholder' id='viz1522967623700' style='position: relative'><noscript><a href='#'><img alt='Top Player 3 Pointers ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3P&#47;3PtScatter&#47;TopPlayer3Pointers&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                <param name='name' value='3PtScatter&#47;TopPlayer3Pointers' /><param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3P&#47;3PtScatter&#47;TopPlayer3Pointers&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+            </object>
+            </div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1522967623700');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            vizElement.style.width='1000px';vizElement.style.height='827px';                    
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+        
+        <br>
+        <h4>The above chart shows the number of 2 point attempts versus the number of three point attempts by the top (in terms of three point shots made) three point shooters from 2000 to 2018. 
+        We can see that initially, the points are concentrated on the lower and lower right regions of the scatter plot, indicating higher volumes of 2-point shots and lower volumes of 3-point shots.
+        However, in later years, the points start to move towards the upper region of the scatter plot, indicating higher and higher three point attempts. Some of the best shooters are now attempting more 
+        three point shots than two point shots. One name also stands out above the rest in this plot, as the two points near the top of the plot: Stephen Curry, having attempted nearly 2000 three pointers between
+        2016 and 2017. Looking at the trends, it is clear the affinity for the 3-point shot is not only growing but will continue to grow.</h4>
+        
+        <div class="tab-pane" id="tab2">
+            <h1>Evolution of the NBA Player Salaries</h1>
+            <div class='tableauPlaceholder' id='viz1523062037539' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBASalary1&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBASalary1&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBASalary1&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object>
+            </div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1523062037539');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <br>
+            <div class='tableauPlaceholder' id='viz1523062493215' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBASalary2&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBASalary2&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBASalary2&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1523062493215');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <br>
+            <h4>The above chart shows the distribution of NBA team and player salaries from 1991 to 2018. We can see generally, as the salary cap increases, the salary of each team also increases. The NBA salary cap is the limit to the total amount of money that National Basketball Association teams are allowed to pay their players. The latest NBA salary cap agreement was ratified in Decemember 2011. Starting from 2015, the cap soared to $70 million and therefore, the NBA team salary started to increase steeply. For season 2017-18, the cap is set to $99 million. In the chart above, you can focus on a specific year or player you are interested in.  </h4>
+
+            <div class='tableauPlaceholder' id='viz1523061601224' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBASalary3&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBASalary3&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBASalary3&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1523061601224');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+            <h4>The above chart shows the percentage of frontcourt player salaries and guard player salaries. You can slide to see the pie chart for each year.  </h4>
+        </div>
+        <div class="tab-pane" id="tab3">
+            <div class='tableauPlaceholder' id='viz1523063458623' style='position: relative'><noscript><a href=' '>< img alt='NBA Stats Over Years ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAStats_13&#47;Sheet1&#47;1_rss.png' style='border: none' /></a ></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBAStats_13&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAStats_13&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object>
+      </div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1523063458623');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <h4>The above chart showes nine NBA teams defense statistics from 1985 to 2016. The major concept of this visualizations is to observe the impact of rule changes in NBA to the games.
+          We can see in the first graph from another angle that the impact of enlarging and shrinking the 3pt line result in the 3pt attempt. And also as most of the three point attempt is catch and shoot,
+          which will often come with an assist, the assist number in the 1998 also decreased as we could observe in the second graph. Also, according to two rule changes, the hand check rule in 1998, the blocking foul and
+          defense three seconds violation result in free throws there are two peaks in the free throw attempt amount in season 1997-1998 and 2004-2005.</h4>
+        </div>
+        <div class="tab-pane active" id="tab4">
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+            <script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+            <h1>Victories in Finals</h1>
+            <h4>
+                Every year, a best of 7 game series will be played between a team from the West and a team from the East. This will determine the NBA champion of the year. There are a total of 19 teams made it to the final during 1981 and 2017. The chord diagram below shows the number of games each team won and the corresponding opponent.
+            </h4>
+            <script>
+                var data = [
+                ['Blazers', 'Bulls', 2], 
+                ['Blazers', 'Pistons', 1], 
+                ['Bulls', 'Blazers', 4], 
+                ['Bulls', 'Jazz', 8], 
+                ['Bulls', 'Lakers', 4], 
+                ['Bulls', 'Sonics', 4], 
+                ['Bulls', 'Suns', 4], 
+                ['Cavaliers', 'Warriors', 7], 
+                ['Celtics', 'Lakers', 15], 
+                ['Celtics', 'Rockets', 8], 
+                ['Heat', 'Mavericks', 6], 
+                ['Heat', 'Sonics', 4], 
+                ['Heat', 'Spurs', 5], 
+                ['Jazz', 'Bulls', 4], 
+                ['Knicks', 'Rockets', 3], 
+                ['Knicks', 'Spurs', 1], 
+                ['Lakers', 'Bulls', 1], 
+                ['Lakers', 'Celtics', 17], 
+                ['Lakers', 'Magic', 4], 
+                ['Lakers', 'Nets', 4], 
+                ['Lakers', 'Pacers', 4], 
+                ['Lakers', 'Pistons', 5], 
+                ['Lakers', 'Sixers', 12], 
+                ['Magic', 'Lakers', 1], 
+                ['Mavericks', 'Heat', 6], 
+                ['Nets', 'Spurs', 2], 
+                ['Pacers', 'Lakers', 2], 
+                ['Pistons', 'Blazers', 4], 
+                ['Pistons', 'Lakers', 11], 
+                ['Pistons', 'Spurs', 3], 
+                ['Rockets', 'Celtics', 4], 
+                ['Rockets', 'Knicks', 4], 
+                ['Rockets', 'Magic', 4], 
+                ['Sixers', 'Lakers', 9], 
+                ['Sonics', 'Bulls', 2], 
+                ['Sonics', 'Heat', 2], 
+                ['Spurs', 'Cavaliers', 4], 
+                ['Spurs', 'Heat', 6], 
+                ['Spurs', 'Knicks', 4], 
+                ['Spurs', 'Nets', 4], 
+                ['Spurs', 'Pistons', 4], 
+                ['Suns', 'Bulls', 2], 
+                ['Warriors', 'Cavaliers', 11]
+                ];
+
+                var colors = {
+                "Blazers":       "#da4480"
+                ,"Bulls":        "#5ab449"
+                ,"Cavaliers":    "#7f5acd"
+                ,"Heat":         "#aab740"
+                ,"Jazz":         "#ce58c0"
+                ,"Knicks":       "#50a26e"
+                ,"Lakers":       "#d1434b"
+                ,"Magic":        "#45c0bc"
+                ,"Mavericks":    "#ce5929"
+                ,"Nets":         "#4e7bda"
+                ,"Pacers":       "#d49d3c"
+                ,"Pistons":      "#6660a3"
+                ,"Rockets":      "#7b853c"
+                ,"Sixers":       "#b58dde"
+                ,"Sonics":       "#97622e"
+                ,"Spurs":        "#609dd6"
+                ,"Suns":         "#e29074"
+                ,"Warriors":     "#9c4b88"
+                };
+
+                var sortOrder =[
+                'Blazers', 
+                'Bulls', 
+                'Cavaliers', 
+                'Celtics', 
+                'Heat', 
+                'Jazz', 
+                'Knicks', 
+                'Lakers', 
+                'Magic', 
+                'Mavericks', 
+                'Nets', 
+                'Pacers', 
+                'Pistons', 
+                'Rockets', 
+                'Sixers', 
+                'Sonics', 
+                'Spurs', 
+                'Suns', 
+                'Warriors'
+                ];
+
+                function sort(a,b){ return d3.ascending(sortOrder.indexOf(a),sortOrder.indexOf(b)); }
+
+                var ch = viz.ch().data(data)
+                      .padding(.01)
+                      .sort(sort)
+                      .innerRadius(230)
+                      .outerRadius(250)
+                      .duration(1000)
+                      .chordOpacity(0.3)
+                      .labelPadding(.03)
+                      .fill(function(d){ return colors[d];});
+
+                var width=1200, height=1100;
+
+                var svg = d3.select("body").append("svg").attr("height",height).attr("width",width);
+
+                svg.append("g").attr("transform", "translate(600,550)").call(ch);
+
+                // adjust height of frame in bl.ocks.org
+                d3.select(self.frameElement).style("height", height+"px").style("width", width+"px");     
+            </script>
+        </div>
+        </div>
+      </div>
+      
+      
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    
+</body>
+</html>
